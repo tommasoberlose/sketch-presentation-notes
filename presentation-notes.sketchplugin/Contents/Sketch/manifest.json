@@ -12,23 +12,29 @@
       "name": "Add notes to selected artboards",
       "identifier": "add-notes",
       "shortcut": "ctrl shift n",
-      "script": "./add-notes.js"
+      "script": "add-notes.js"
     },
     {
       "name": "Remove notes form selected artboards",
       "identifier": "remove-notes",
       "shortcut": "ctrl shift alt n",
-      "script": "./remove-notes.js"
+      "script": "remove-notes.js"
     },
     {
       "name": "Toggle all notes",
       "identifier": "toggle-notes",
       "shortcut": "ctrl shift t",
-      "script": "./toggle-notes.js"
+      "script": "toggle-notes.js"
     }
   ],
   "menu": {
     "title": "Presentation Notes",
-    "items": ["add-notes", "remove-notes", "toggle-notes"]
-  }
+    "items": [
+      "add-notes",
+      "remove-notes",
+      "toggle-notes"
+    ]
+  },
+  "disableCocoaScriptPreprocessor": true,
+  "appcast": "https://raw.githubusercontent.com//master/.appcast.xml"
 }

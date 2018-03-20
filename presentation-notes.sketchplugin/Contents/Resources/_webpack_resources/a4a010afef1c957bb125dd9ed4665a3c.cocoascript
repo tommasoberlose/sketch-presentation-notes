@@ -1,0 +1,21 @@
+export default function(context) {
+  var sketch = context.api();
+  var document = sketch.selectedDocument;
+  var selection = document.selectedLayers;
+
+  var artboardsToSelect = [];
+  selection.iterate(function(item) {
+    if (artboard.isArtboard) {
+      artboardsToSelect.push(artboard);
+    }
+  });
+  selection.clear();
+
+  if (artboardsToSelect.isEmpty) {
+    document.showMessage('No artboard are selected.')
+  } else {
+    artboardsToSelect.iterate(function(item) {
+      item.frame.height += 200;
+    })
+  }
+}
